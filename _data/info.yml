@@ -37,6 +37,9 @@ social:
   - facebook: facebook url
   - linkedin: linkedin url
   - twitter: twitter url
+
+
+
 ##################################
 # Landing Screen
 # - The landing page text and button contents
@@ -51,96 +54,164 @@ landing-button-link: facebook.com
 # - add more paragraphs as needed
 # - Do NOT give a value to "about-text" only the paragraphs
 ##################################
+about-title: About
+
 about-text:
   - paragraph:  The Daniel Boone Splash and Dash is an exciting swim-run event for kids 7-15 years old. The race will start with the swim portion in the City of Berea Pool and then take participants around the City of Berea multi-use trails. The entire course is closed for safety of all participants.
   - paragraph:  For a list of Frequently Asked Questions
-about-button-text: Click me!
-about-button-link: facebook.com
 
-about-button2-text: No, click me!
-about-button2-link: facebook.com
+
+about-button-text: More
+about-button-link: /about
+
+about-button2-text:
+about-button2-link:
+
+##################################
+# Event Info Section
+# - add more paragraphs as needed
+##################################
+eventinfo-title: Course Info
+
+eventinfo-text:
+  - paragraph:   Currently we are finalizing our contract with the online registration company Active.com
+  - paragraph:
+
+eventinfo-button-text: Full Details
+eventinfo-button-link: /course
+
+eventinfo-button2-text:
+eventinfo-button2-link:
+
+
+##################################
+# Race Day Section
+# - add more paragraphs as needed
+##################################
+raceday-title: Race Day
+
+raceday-text:
+  - paragraph:   There will be 20 youth scholarships available to youth for this Splash and Dash event. If you are interested in applying for one of these scholarships fill out the scholarship form and tell us why you think you should earn one. A panel of reviewers will get back to you within 24 hours to notify the winners.
+  - paragraph:
+
+raceday-button-text: More Details
+raceday-button-link: /raceday
+
+raceday-button2-text:
+raceday-button2-link:
+
+##################################
+# Rules Section
+# - add more paragraphs as needed
+##################################
+rules-titile: Rules
+
+rules-text:
+  - paragraph:   There are USAT Rules which we follow.
+  - paragraph:   Click here to read the USAT Rules
+
+
+rules-button-text: View the Rules!
+rules-button-link: /rules
+
+rules-button2-text:
+rules-button2-link:
+
+##################################
+# FAQ Section
+# - add more paragraphs as needed
+##################################
+faq-title: F.A.Q.
+
+faq-text:
+  - paragraph:  We have 15 Frequently Asked Questions that may answer whatever you're wondering.
+  - paragraph:
+
+faq-button-text: Check it out!
+faq-button-link: /faq
+
+faq-button2-text:
+faq-button2-link:
+
+##################################
+# Volunteer Section
+# - add more paragraphs as needed
+##################################
+volunteer-title: Volunteer
+
+volunteer-text:
+  - paragraph:   Is your group looking for a fun and simple fundraiser? Would you like to get out and help your community as a group? Any groups (youth groups, teams, charity organizations, civic groups, etc.) who have minimum of 10 people volunteer for any positions during our event can earn $100 for your group. Have each individual register as a volunteer through the link (Click Here) above and when asked they should name your organization. This Group Volunteer Form needs to be filled out and submitted to Volunteer Coordinator following the race. (If you have more than 25 volunteers, you may be eligible for a second group donation [15 in one group at least 10 in the 2nd group]. Please complete a form for each group.) Group Volunteer Forms must be completed for donation within 5 days following the event.
+  - paragraph:
+
+volunteer-button-text: Ready?
+volunteer-button-link: /volunteer
+
+
+volunteer-button2-text:
+volunteer-button2-link:
+##################################
+# Scholarship Section
+# - add more paragraphs as needed
+##################################
+scholarship-title: Scholarship
+
+scholarship-text:
+  - paragraph:   Is your group looking for a fun and simple fundraiser? Would you like to get out and help your community as a group? Any groups (youth groups, teams, charity organizations, civic groups, etc.) who have minimum of 10 people volunteer for any positions during our event can earn $100 for your group. Have each individual register as a volunteer through the link (Click Here) above and when asked they should name your organization. This Group Volunteer Form needs to be filled out and submitted to Volunteer Coordinator following the race. (If you have more than 25 volunteers, you may be eligible for a second group donation [15 in one group at least 10 in the 2nd group]. Please complete a form for each group.) Group Volunteer Forms must be completed for donation within 5 days following the event.
+  - paragraph:
+
+scholarship-button-text: Find out!
+scholarship-button-link: /scholarships
+
+
+scholarship-button2-text:
+scholarship-button2-link:
 
 ##################################
 # Register Section
 # - add more paragraphs as needed
 ##################################
+register-title: Register
+
 register-text:
   - paragraph:   Currently we are finalizing our contract with the online registration company Active.com
   - paragraph:
+
+
 register-button-text: Click me!
 register-button-link: facebook.com
 
-register-button2-text: No, click me!
-register-button2-link: facebook.com
-##################################
-# Scholarships Section
-# - add more paragraphs as needed
-##################################
-scholarship-text:
-  - paragraph:   There will be 20 youth scholarships available to youth for this Splash and Dash event. If you are interested in applying for one of these scholarships fill out the scholarship form and tell us why you think you should earn one. A panel of reviewers will get back to you within 24 hours to notify the winners.
-  - paragraph:
-scholarship-button-text: Click me!
-scholarship-button-link: facebook.com
+register-button2-text:
+register-button2-link:
 
-scholarship-button2-text: No, click me!
-scholarship-button2-link: facebook.com
 ##################################
 # Sponsor Section
 # - add more paragraphs as needed
 ##################################
+sponsor-title: Sponsor
+
 sponsor-text:
   - paragraph:  Currently EPG students are conducting an outreach program to Madison County businesses soliciting Signature, Lead and Supporitn Spnsors. As sponsorship are secured, sponsor names and company descriptions will be inserted here.
   - paragraph:
-sponsor-button-text: Click me!
-sponsor-button-link: facebook.com
 
-sponsor-button2-text: No, click me!
-sponsor-button2-link: facebook.com
-##################################
-# Rules Section
-# - add more paragraphs as needed
-##################################
-rules-text:
-  - paragraph:   There are USAT Rules which we follow.
-  - paragraph:   Click here to read the USAT Rules
-rules-button-text: Click me!
-rules-button-link: facebook.com
 
-rules-button2-text: No, click me!
-rules-button2-link: facebook.com
-##################################
-# FAQ Section
-# - add more paragraphs as needed
-##################################
-faq-text:
-  - paragraph:  We have 15 Frequently Asked Questions that may answer whatever you're wondering.
-  - paragraph:
-faq-button-text: Click me!
-faq-button-link: facebook.com
+sponsor-button-text: Ready?
+sponsor-button-link: /sponsor
 
-faq-button2-text: No, click me!
-faq-button2-link: facebook.com
-##################################
-# Volunteer Section
-# - add more paragraphs as needed
-##################################
-volunteer-text:
-  - paragraph:   Is your group looking for a fun and simple fundraiser? Would you like to get out and help your community as a group? Any groups (youth groups, teams, charity organizations, civic groups, etc.) who have minimum of 10 people volunteer for any positions during our event can earn $100 for your group. Have each individual register as a volunteer through the link (Click Here) above and when asked they should name your organization. This Group Volunteer Form needs to be filled out and submitted to Volunteer Coordinator following the race. (If you have more than 25 volunteers, you may be eligible for a second group donation [15 in one group at least 10 in the 2nd group]. Please complete a form for each group.) Group Volunteer Forms must be completed for donation within 5 days following the event.
-  - paragraph:
-volunteer-button-text: Click me!
-volunteer-button-link: facebook.com
+sponsor-button2-text:
+sponsor-button2-link:
 
-volunteer-button2-text: No, click me!
-volunteer-button2-link: facebook.com
 ##################################
 # Results Section
 # - add more paragraphs as needed
 ##################################
-results-text:
-  - paragraph:  This is the first USAT Splash and Dash. Thus there are no 2015 results.
-  - paragraph:  Check Here for 2016 Results
-results-button-text: Click me!
-results-button-link: facebook.com
+results-title: Results
 
-results-button2-text: No, click me!
-results-button2-link: facebook.com
+results-text:
+  - paragraph:  This is the first USAT Splash and Dash. Thus there are no 2016 results.
+  - paragraph:
+
+results-button-text: 2016 Results
+results-button-link:
+
+results-button2-text:
+results-button2-link:

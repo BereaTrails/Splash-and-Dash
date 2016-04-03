@@ -21,10 +21,326 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.0.0/masonry.pkgd.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/js/custom.js"></script>
-  <script type="text/javascript" src="/js/wow.min.js"></script>
 
 </head>
+<script type="text/javascript">
+$(document).ready(function(){
+$(".navbar-brand").fadeOut();
+
+$(window).scroll(function(){
+  $('.float img').css('position', 'relative');
+  $('.float img').animate({right: '1000px'});
+  $('.float img').fadeOut();
+
+  $(".navbar-brand").fadeIn();
+
+});
+  var wheight = $(window).height(); //get the height of the window
+$(".video").css("height", $(".float").outerHeight() +100);
+  $('.fullheight').css('height', wheight);
+
+  $('.stripe').css("height", wheight/3);
+  //resize the "fullheight" elements on screen resize
+  $(window).resize(function() {
+      wheight = $(window).height(); //get the height of the window
+      $('.fullheight').css('height', (wheight)); //set to window tallness
+      ('.halfheight').css('height', wheight/2);
+      $('.thirdheight').css('height', wheight/3);
+      $(".video").css("height", $(".float").outerHeight()+100);
+
+  });
+
+
+  $(function() {
+      $("[href^='#']").on("click", function( e ) {
+
+        var target = $(this).attr('href');
+
+        var scrollTop = $( target ).offset().top-$('nav').height();
+
+        if ( target =='#home'){
+           scrollTop = 0;
+        }
+
+        $("body, html").animate({
+                scrollTop: scrollTop
+            }, 800);
+
+        e.preventDefault();
+
+
+      });
+
+    });
+
+  $('.masonry-grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth:210
+
+  });
+  $('.mason-grid').masonry({
+    // options
+    itemSelector: '.grid-thing',
+
+    columnWidth:100
+
+  });
+
+
+
+})
+
+</script>
+<style media="screen">
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+footer{
+
+}
+#about{
+background-color:rgb(23,125,215);
+color: #eee;
+padding: 50px;
+}
+#sponsor{
+padding: 50px;
+}
+#sponsors{
+
+}
+#register{
+background-color:rgb(23,125,215);
+color: #eee;
+padding: 50px;
+}
+.go{
+background-color: #eee;
+background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+background-size:60px 60px;
+background-position:0 0, 30px 30px;
+color: #202125;
+}
+.go h1{
+background-color: #EEE;
+padding-top: 20px;
+padding-bottom: 20px;
+margin:0px;
+}
+#info {
+background: url(http://i.imgur.com/CieNZVd.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+#empty {
+background: url(http://i.imgur.com/9f5haS2.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+h1,h2,h3,h4,h5,h6{
+text-align: center;
+font-family: Oswald;
+font-size: 4em;
+}
+.stripe > h1{
+padding: 0em;
+margin: 0em;
+top:30%;
+}
+.red{
+background-color: rgb(226, 20, 20);
+color:#fff;
+}
+.white{
+}
+.content{
+  margin-top: 200px;
+}
+.blue{
+background-color:rgb(23,125,215);
+color:#fff;
+}
+.col-sm-8 > p{
+font-family: "droid sans";
+font-family: helvetica;
+font-weight: normal;
+font-size: 1.6em;
+line-height: 1.6em;
+
+}
+.col-sm-8 > h1{
+font-family: Oswald;
+font-size: 4em;
+}
+hr{
+max-width: 200px;
+border-width: 5px;
+}
+.navbar-nav li>a.btn-flat{
+background-color: rgb(226, 20, 20);
+border-radius: 0px;
+margin-left: 20px;
+text-decoration: none;
+color: #FFF;
+font-weight: bold;
+display: block;
+}
+.navbar-nav li>a.btn-flat:hover{
+background-color: rgb(180, 18, 18);
+color: #FFF;
+}
+.call{
+text-align: center;
+}
+.statement{
+color: #fff;
+font-weight: bold;
+}
+.nav a{
+color: #707070;
+font-weight: bolder;
+text-decoration: none;
+}
+nav{
+height:75px;
+background-color: #fff;
+}
+.navbar-nav li>a:hover,.navbar-nav li>a:focus,.navbar-nav li.active {
+  color:rgb(23,125,215);
+  background-color: inherit;
+}
+.navbar-nav li>a{
+margin-top: 10px;
+}
+.holder{
+  position: relative;
+}
+.statement{
+position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 740px
+}
+.call{
+position: absolute;
+left: 0;
+right: 0;
+bottom: 5%;
+margin-left: auto;
+margin-right: auto;
+max-width: 740px
+}
+.banner{
+background-color: rgba(0, 0, 0, 0.75);
+color: #fff;
+margin-top: 10%;
+}
+
+video{
+position: absolute;
+overflow: hidden;
+height: inherit;
+width: inherit;
+object-fit: cover;
+z-index: -100;
+min-width:100%;
+min-height:100%
+
+}
+.video{
+overflow: auto;
+
+}
+.video .float{
+position: absolute;
+left:20%;
+color:#fff;
+text-align: left;
+margin-top: 100px;
+}
+.float img{
+max-width: 200px;
+}
+.float .btn-basic{
+margin-left: 0px;
+}
+.float h1{
+text-align: left;
+}
+.float h3{
+text-align: left;
+font-size: 2em;
+font-style: italic;
+}
+.filter{
+position: absolute;
+min-width: 100%;
+min-height: 100%;
+}
+.btn-basic{
+background-color: rgb(226, 20, 20);
+border-radius: 0px;
+padding: 15px;
+margin: 25px;
+text-decoration: none;
+color: #FFF;
+font-weight: bold;
+}
+.btn-basic:hover{
+background-color: rgb(180, 18, 18);
+color: #FFF;
+}
+.btn-basic-alt{
+background-color: #eee;
+border-radius: 0px;
+padding: 15px;
+margin: 25px;
+text-decoration: none;
+color: #404040;
+font-weight: bold;
+}
+.btn-basic-alt:hover{
+background-color: #aaa;
+color: #FFF;
+}
+.navbar-brand img{
+max-height:100px;
+min-height: 100px;
+
+
+}
+.grid-item{
+margin: 5px;
+}
+.navbar-default .navbar-toggle {
+border-color:#000;
+}
+.nav > li > a{
+background-color: #fff;
+}
+.nav > li > a:hover{
+background-color: #aaa;
+}
+
+</style>
 
 
   <body>
@@ -82,11 +398,11 @@
     </div>
 </nav>
 
-    
+
 <section id="home" >
   <div class="video">
     <div class="float">
-      <img src="/img/logo.png" alt="Berea Kentucky Splash and Dassh Youth triathalon" />
+      <img src="http://i.imgur.com/WgISIZL.png" alt="Berea Kentucky Splash and Dash Youth triathalon" />
       <h1> Want to make the most of your summer? </h1>
       <h1>Get out and splash!</h1>
       <br>
@@ -95,7 +411,7 @@
 
 
     </div>
-          <video muted loop autoplay poster="/img/cover.JPG">
+          <video muted loop autoplay poster="http://i.imgur.com/h9yGzGX.jpg">
       <source src="/img/cover.mp4" type="video/mp4">
     </video>
 
@@ -120,8 +436,11 @@
           </p>
           
           <div style="text-align:center;">
-            <a class="btn btn-basic" href="facebook.com">Click me!</a>
-            <a class="btn btn-basic-alt" href="facebook.com">No, click me!</a>
+            
+            <a class="btn btn-basic" href="/about">More</a>
+            
+            
+
           </div>
         </div>
 
@@ -153,12 +472,23 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2 banner wow fadeInBigRight">
-          <h1>Event Details</h1>
+          <h1>Course Info</h1>
           <hr>
+          
           <p>
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for .
+            Currently we are finalizing our contract with the online registration company Active.com
           </p>
-        </div>
+          
+          <p>
+            
+          </p>
+          
+
+            
+
+            <a class="btn btn-basic" href="/course">Full Details</a>
+  
+            
       </div>
     </div>
   </div>
@@ -188,7 +518,7 @@
         <hr>
         
         <p>
-          Currently we are finalizing our contract with the online registration company Active.com
+          There will be 20 youth scholarships available to youth for this Splash and Dash event. If you are interested in applying for one of these scholarships fill out the scholarship form and tell us why you think you should earn one. A panel of reviewers will get back to you within 24 hours to notify the winners.
         </p>
         
         <p>
@@ -197,8 +527,11 @@
         
 
         <div style="text-align:center;">
-          <a class="btn btn-basic" href=""></a>
-          <a class="btn btn-basic-alt" href=""></a>
+          
+
+          <a class="btn btn-basic" href="/raceday">More Details</a>
+
+          
         </div>
       </div>
 
@@ -212,7 +545,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
-        <h1>Rules</h1>
+        <h1></h1>
         <hr>
         
         <p>
@@ -225,8 +558,11 @@
         
 
         <div style="text-align:center;">
-          <a class="btn btn-basic" href="facebook.com">Click me!</a>
-          <a class="btn btn-basic-alt" href="facebook.com">No, click me!</a>
+          
+
+          <a class="btn btn-basic" href="/rules">View the Rules!</a>
+
+          
         </div>
       </div>
 
@@ -240,7 +576,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
-        <h1>FAQ</h1>
+        <h1>F.A.Q.</h1>
         <hr>
         
         <p>
@@ -253,8 +589,10 @@
         
 
         <div style="text-align:center;">
-          <a class="btn btn-basic" href="facebook.com">Click me!</a>
-          <a class="btn btn-basic-alt" href="facebook.com">No, click me!</a>
+          
+          <a class="btn btn-basic" href="/faq">Check it out!</a>
+
+          
         </div>
       </div>
 
@@ -282,8 +620,11 @@
         
 
         <div style="text-align:center;">
-          <a class="btn btn-basic" href="facebook.com">Click me!</a>
-          <a class="btn btn-basic-alt" href="facebook.com">No, click me!</a>
+          
+
+          <a class="btn btn-basic" href="/volunteer">Ready?</a>
+
+          
         </div>
       </div>
 
@@ -297,10 +638,11 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
-        <h1>Scholarships</h1>
+        <h1>Scholarship</h1>
+        <hr>
         
         <p>
-          There will be 20 youth scholarships available to youth for this Splash and Dash event. If you are interested in applying for one of these scholarships fill out the scholarship form and tell us why you think you should earn one. A panel of reviewers will get back to you within 24 hours to notify the winners.
+          Is your group looking for a fun and simple fundraiser? Would you like to get out and help your community as a group? Any groups (youth groups, teams, charity organizations, civic groups, etc.) who have minimum of 10 people volunteer for any positions during our event can earn $100 for your group. Have each individual register as a volunteer through the link (Click Here) above and when asked they should name your organization. This Group Volunteer Form needs to be filled out and submitted to Volunteer Coordinator following the race. (If you have more than 25 volunteers, you may be eligible for a second group donation [15 in one group at least 10 in the 2nd group]. Please complete a form for each group.) Group Volunteer Forms must be completed for donation within 5 days following the event.
         </p>
         
         <p>
@@ -308,8 +650,8 @@
         </p>
         
         <div style="text-align:center;">
-          <a class="btn btn-basic" href="facebook.com">Click me!</a>
-          <a class="btn btn-basic-alt" href="facebook.com">No, click me!</a>
+          
+          
         </div>
       </div>
 
@@ -323,7 +665,7 @@
   <div class="container ">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
-        <h1>Sponsor an athlete!</h1>
+        <h1>Sponsor</h1>
         <hr>
         
         <p>
@@ -335,8 +677,12 @@
         </p>
         
 <div style="text-align:center;">
-  <a class="btn btn-basic" href="facebook.com">Click me!</a>
-  <a class="btn btn-basic-alt" href="facebook.com">No, click me!</a>
+  
+
+  <a class="btn btn-basic" href="/sponsor">Ready?</a>
+
+  
+
 </div>
 
 
@@ -376,7 +722,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
-        <h1>Register today!</h1>
+        <h1>Register</h1>
         <hr>
         
         <p>
@@ -389,8 +735,11 @@
         
 
         <div style="text-align:center;">
+          
+
           <a class="btn btn-basic" href="facebook.com">Click me!</a>
-          <a class="btn btn-basic-alt" href="facebook.com">No, click me!</a>
+
+          
         </div>
       </div>
 
@@ -407,212 +756,212 @@
         <hr>
 
 
-                <div class="masonry-grid">
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/0.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/1.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/2.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/3.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/4.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/5.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/6.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/7.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/8.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/9.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/10.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/11.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/12.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/13.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/14.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/15.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/16.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/17.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/18.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/19.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/20.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/21.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/22.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/23.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/24.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/25.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/26.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/27.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/28.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/29.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/30.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/31.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/32.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/33.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/34.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/35.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/36.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/37.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/38.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/39.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/40.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/41.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/42.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/43.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/44.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/45.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/46.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/47.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/48.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/49.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/50.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/51.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/52.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/53.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/54.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/55.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/56.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/57.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/58.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/59.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/60.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/61.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/62.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/63.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/64.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/65.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/66.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/67.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/68.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/69.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/70.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/71.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/72.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/73.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/74.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/75.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/76.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/77.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/78.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/79.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/80.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/81.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/82.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/83.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/84.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/85.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/86.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/87.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/88.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/89.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/90.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/91.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/92.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/93.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/94.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/95.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/96.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/97.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/98.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/99.jpg" alt="" />
-                  
-                  <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/100.jpg" alt="" />
-                  
+        <div class="masonry-grid">
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/0.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/1.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/2.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/3.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/4.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/5.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/6.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/7.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/8.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/9.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/10.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/11.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/12.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/13.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/14.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/15.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/16.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/17.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/18.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/19.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/20.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/21.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/22.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/23.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/24.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/25.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/26.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/27.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/28.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/29.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/30.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/31.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/32.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/33.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/34.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/35.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/36.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/37.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/38.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/39.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/40.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/41.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/42.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/43.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/44.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/45.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/46.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/47.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/48.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/49.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/50.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/51.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/52.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/53.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/54.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/55.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/56.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/57.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/58.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/59.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/60.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/61.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/62.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/63.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/64.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/65.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/66.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/67.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/68.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/69.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/70.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/71.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/72.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/73.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/74.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/75.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/76.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/77.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/78.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/79.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/80.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/81.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/82.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/83.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/84.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/85.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/86.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/87.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/88.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/89.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/90.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/91.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/92.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/93.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/94.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/95.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/96.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/97.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/98.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/99.jpg" alt="" />
+          
+          <img width="200px"class="grid-item wow fadeInLeftBig" src="/img/sponsors/100.jpg" alt="" />
+          
 
-      </div>
+</div>
 
     </div>
 
@@ -627,17 +976,17 @@
         <hr>
         
         <p>
-          This is the first USAT Splash and Dash. Thus there are no 2015 results.
+          This is the first USAT Splash and Dash. Thus there are no 2016 results.
         </p>
         
         <p>
-          Check Here for 2016 Results
+          
         </p>
         
 
         <div style="text-align:center;">
-          <a class="btn btn-basic" href="facebook.com">Click me!</a>
-          <a class="btn btn-basic-alt" href="facebook.com">No, click me!</a>
+          
+          
         </div>
       </div>
 
@@ -693,13 +1042,13 @@ animation-fill-mode: both;
 <a style="display:block; position:fixed; right:10px; bottom:10px;" href="" target="_blank">
     <span class="first fa-stack fa-2x hidden">
         <i style="color:rgb(226, 20, 20);text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);" class="fa fa-circle fa-stack-2x"></i>
-        <i style="color:#fff" class="fa fa-rss fa-stack-1x"></i>
+        <i style="color:#fff" class="fa fa-facebook fa-stack-1x"></i>
     </span>
 </a>
 <a style="display:block; position:fixed; right:10px; bottom:70px;" href="" target="_blank">
     <span class="second fa-stack fa-2x hidden">
         <i style="color:rgb(226, 20, 20);text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);" class="fa fa-circle fa-stack-2x"></i>
-        <i style="color:#fff" class="fa fa-github fa-stack-1x"></i>
+        <i style="color:#fff" class="fa fa-twitter fa-stack-1x"></i>
     </span>
 </a>
 <a style="display:block; position:fixed; right:10px; bottom:130px;" href="" target="_blank">
@@ -735,6 +1084,8 @@ $(window).scroll(function() {
  }
 }); //missing );
 </script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-554024cd47b43846"></script>
 
 
 

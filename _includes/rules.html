@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
-        <h1>Rules</h1>
+        <h1>{{site.data.info.rules-title}}</h1>
         <hr>
         {% for paragraph in site.data.info.rules-text %}
         <p>
@@ -11,8 +11,14 @@
         {% endfor %}
 
         <div style="text-align:center;">
+          {% if site.data.info.rules-button-link %}
+
           <a class="btn btn-basic" href="{{site.data.info.rules-button-link}}">{{site.data.info.rules-button-text}}</a>
+{% endif %}
+          {% if site.data.info.rules-button2-link %}
+
           <a class="btn btn-basic-alt" href="{{site.data.info.rules-button2-link}}">{{site.data.info.rules-button2-text}}</a>
+{% endif %}
         </div>
       </div>
 
