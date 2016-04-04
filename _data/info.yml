@@ -34,9 +34,10 @@
 # - These links should direct to their respective pages
 ##################################
 social:
-  - facebook: facebook url
-  - linkedin: linkedin url
-  - twitter: twitter url
+  - facebook: https://www.facebook.com/bereasplashanddash/
+  - linkedin: 
+  - twitter: https://twitter.com/BereaSplashDash
+  - instagram:
 
 
 
@@ -179,7 +180,7 @@ register-text:
 
 
 register-button-text: Click me!
-register-button-link: facebook.com
+register-button-link:
 
 register-button2-text:
 register-button2-link:
@@ -191,7 +192,7 @@ register-button2-link:
 sponsor-title: Sponsor
 
 sponsor-text:
-  - paragraph:  Currently EPG students are conducting an outreach program to Madison County businesses soliciting Signature, Lead and Supporitn Spnsors. As sponsorship are secured, sponsor names and company descriptions will be inserted here.
+  - paragraph:  Currently EPG students are conducting an outreach program to Madison County businesses soliciting Signature, Lead and Supporitng Sponsors. As sponsorship are secured, sponsor names and company descriptions will be inserted here.
   - paragraph:
 
 

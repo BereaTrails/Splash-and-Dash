@@ -7,4 +7,4 @@ permalink: scholarships/
 ---
 There will be 20 youth scholarships available to youth for this Splash and Dash event. If you are interested in applying for one of these scholarships fill out the scholarship form and tell us why you think you should earn one. A panel of reviewers will get back to you within 24 hours to notify the winners.
 
-### GOOGLE FORMS FOR APPLICATION
+### GOOGLE FORMS FOR APPLICATION COMMING SOON
