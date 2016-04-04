@@ -62,7 +62,7 @@ about-text:
 
 
 about-button-text: More
-about-button-link: /about
+about-button-link: /about.html
 
 about-button2-text:
 about-button2-link:
@@ -78,7 +78,7 @@ eventinfo-text:
   - paragraph:
 
 eventinfo-button-text: Full Details
-eventinfo-button-link: /course
+eventinfo-button-link: /course.html
 
 eventinfo-button2-text:
 eventinfo-button2-link:
@@ -95,7 +95,7 @@ raceday-text:
   - paragraph:
 
 raceday-button-text: More Details
-raceday-button-link: /raceday
+raceday-button-link: /raceday.html
 
 raceday-button2-text:
 raceday-button2-link:
@@ -112,7 +112,7 @@ rules-text:
 
 
 rules-button-text: View the Rules!
-rules-button-link: /rules
+rules-button-link: /rules.html
 
 rules-button2-text:
 rules-button2-link:
@@ -128,7 +128,7 @@ faq-text:
   - paragraph:
 
 faq-button-text: Check it out!
-faq-button-link: /faq
+faq-button-link: /faq.html
 
 faq-button2-text:
 faq-button2-link:
@@ -144,7 +144,7 @@ volunteer-text:
   - paragraph:
 
 volunteer-button-text: Ready?
-volunteer-button-link: /volunteer
+volunteer-button-link: /volunteer.html
 
 
 volunteer-button2-text:
@@ -160,7 +160,7 @@ scholarship-text:
   - paragraph:
 
 scholarship-button-text: Find out!
-scholarship-button-link: /scholarships
+scholarship-button-link: /scholarships.html
 
 
 scholarship-button2-text:
@@ -195,7 +195,7 @@ sponsor-text:
 
 
 sponsor-button-text: Ready?
-sponsor-button-link: /sponsor
+sponsor-button-link: /sponsor.html
 
 sponsor-button2-text:
 sponsor-button2-link:
