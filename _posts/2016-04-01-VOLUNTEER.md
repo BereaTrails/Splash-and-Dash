@@ -3,7 +3,7 @@ layout: page
 title:  "Volunteer - Berea Splash and Dash"
 date:   2015-04-08
 image: "bg"
-permalink: volunteer
+permalink: volunteer/
 ---
 
 ### REGISTER HERE - VIA GOOGLE FORMS
