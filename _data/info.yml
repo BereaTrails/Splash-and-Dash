@@ -104,7 +104,7 @@ raceday-button2-link:
 # Rules Section
 # - add more paragraphs as needed
 ##################################
-rules-titile: Rules
+rules-title: Rules
 
 rules-text:
   - paragraph:   There are USAT Rules which we follow.

@@ -28,18 +28,18 @@ If you have questions regarding volunteering or training, please contact the Vol
 City of Berea and Trail Town Committee Splash and Dash Community Volunteers
 Below we have listed the areas where the Community Volunteer Coordinator will need community volunteer support and a guide to the times on race day.  These are subject to change depending on the race timings and will be confirmed when you are allocated a role just before the event. All community volunteers are expected to be available on June 25 from 7:30 to noon.
 
-|Role 			 |    Description|
-|------------|---------------| 						
-|Registration|	Reports to the Registration Coordinator. Registration is the first place all the youth athletes (and perhaps their parents) will go when they arrive. You will be required to check the athletes off a list, hand them their goody bag such as race numbers, swim hats etc. This is a busy but fun place to work with a lot of interaction with the athletes. We only require 2/3 volunteers for this role.|
-|Transition | 	Reports to the Race Director. Transition is a key place to be. Your role here will be to ensure, with the Transition Coordinator that the area is set up for the athletes before they check their running gear in. Provides a secure transition area and keep non athletes out of the area. We only require 1/2 volunteers for this role.|
+|Role 			      |    Description|
+|-----------------|---------------| 						
+|Registration     |	Reports to the Registration Coordinator. Registration is the first place all the youth athletes (and perhaps their parents) will go when they arrive. You will be required to check the athletes off a list, hand them their goody bag such as race numbers, swim hats etc. This is a busy but fun place to work with a lot of interaction with the athletes. We only require 2/3 volunteers for this role.|
+|Transition       | 	Reports to the Race Director. Transition is a key place to be. Your role here will be to ensure, with the Transition Coordinator that the area is set up for the athletes before they check their running gear in. Provides a secure transition area and keep non athletes out of the area. We only require 1/2 volunteers for this role.|
 
 |Swim Exit Marshal|	Reports to the Swim Coordinator. As the swimmers exit the pool area most of them will need a guiding hand as they seek direction. We only require 2/3 volunteers for this role.
-|Run Marshal|	Reports to the Run Coordinator. Although the Run Course is signed we still need marshals to ensure athletes follow the signage along the route when athletes are coming. You may have to stop the public walking across the route when athletes are coming. We only require 2/3 volunteers for this role.|
+|Run Marshal      |	Reports to the Run Coordinator. Although the Run Course is signed we still need marshals to ensure athletes follow the signage along the route when athletes are coming. You may have to stop the public walking across the route when athletes are coming. We only require 2/3 volunteers for this role.|
 
 |Finish Line Helper|	Reports to the Community Volunteer Coordinator. Volunteers are required at the finish area to assist with roles such as handing out finisher metals, t shirts, and directing participants to the photographer’s area. We only require 1/2 volunteers for this role.|
-|Award Ceremony |	Works in coordination with the Timer.  The Awards Ceremony is a chance for all athletes, parents and sponsors to get together and congratulate themselves. We only require 1/2 volunteers for this role.|
+|Award Ceremony   |	Works in coordination with the Timer.  The Awards Ceremony is a chance for all athletes, parents and sponsors to get together and congratulate themselves. We only require 1/2 volunteers for this role.|
 
-|Result and Photos | (link to an online timing company and photo company)|
+|Result and Photos| (link to an online timing company and photo company)|
 
 ### VOLUNTEER TRAINING VIDEOS
 
