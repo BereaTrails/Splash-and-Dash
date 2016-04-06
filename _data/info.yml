@@ -34,7 +34,7 @@
 # - These links should direct to their respective pages
 ##################################
 facebook: https://www.facebook.com/bereasplashanddash/
-linkedin:
+linkedin: https://linkedin.com
 twitter: https://twitter.com/BereaSplashDash
 instagram:
 
@@ -48,7 +48,7 @@ landing-text-1: Want to make the most of your summer?
 landing-text-2: Get out and splash!
 landing-text-3: Berea Kentucky First Splash and Dash
 landing-button-text: Click Me!
-landing-button-link: facebook.com
+landing-button-link: /about
 ##################################
 # About Section
 # - add more paragraphs as needed

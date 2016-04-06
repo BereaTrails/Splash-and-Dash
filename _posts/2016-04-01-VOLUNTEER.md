@@ -77,47 +77,51 @@ Below we have listed the areas where the Community Volunteer Coordinator will ne
 
 ### VOLUNTEER TRAINING VIDEOS
 
-[Parking](https://youtube.com)
+#### Videos will be uploaded soon.
 
-[Schedule for the Day](https://youtube.com)
+Subscribe to our YouTube channel by visiting one of the links below.
 
-[Registration](https://youtube.com)
+[Parking](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Swim Marshal](https://youtube.com)
+[Schedule for the Day](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Transition](https://youtube.com)
+[Registration](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Food](https://youtube.com)
+[Swim Marshal](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Run Marshal](https://youtube.com)
+[Transition](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Aid stations](https://youtube.com)
+[Food](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Signage](https://youtube.com)
+[Run Marshal](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Finish Line Helper](https://youtube.com)
+[Aid stations](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Award Ceremony](https://youtube.com)
+[Signage](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Results and Photo](https://youtube.com)
+[Finish Line Helper](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Other important items](https://youtube.com)
-[Swim Marshal](https://youtube.com)
+[Award Ceremony](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Transition](https://youtube.com)
+[Results and Photo](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Food](https://youtube.com)
+[Other important items](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
+[Swim Marshal](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Run Marshal](https://youtube.com)
+[Transition](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Aid stations](https://youtube.com)
+[Food](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Signage](https://youtube.com)
+[Run Marshal](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Finish Line Helper](https://youtube.com)
+[Aid stations](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Award Ceremony](https://youtube.com)
+[Signage](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Results and Photo](https://youtube.com)
+[Finish Line Helper](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
 
-[Other important items](https://youtube.com)
+[Award Ceremony](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
+
+[Results and Photo](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
+
+[Other important items](https://www.youtube.com/channel/UCf3nkW5YsRcf6kl-BxM019w)
