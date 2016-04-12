@@ -3,16 +3,16 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-          <h1>About</h1>
+          <h1 class="cushycms">About</h1>
           <hr>
           {% for paragraph in site.data.info.about-text %}
-          <p>
+          <p class="cushycms">
             {{paragraph.paragraph}}
           </p>
           {% endfor %}
           <div style="text-align:center;">
-            <a class="btn btn-basic" href="{{site.data.info.about-button-link}}">{{site.data.info.about-button-text}}</a>
-            <a class="btn btn-basic-alt" href="{{site.data.info.about-button2-link}}">{{site.data.info.about-button2-text}}</a>
+            <a class="btn btn-basic cushycms" href="{{site.data.info.about-button-link}}">{{site.data.info.about-button-text}}</a>
+            <a class="btn btn-basic-alt cushycms" href="{{site.data.info.about-button2-link}}">{{site.data.info.about-button2-text}}</a>
           </div>
         </div>
 
