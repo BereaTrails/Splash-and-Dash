@@ -1,0 +1,146 @@
+#####################################
+# INSTRUCTIONS:
+#
+# GENERAL:
+# This file has the following format:
+#
+# key: value
+#
+# Do NOT change the key of any items!
+# Only change the values!
+#
+# TEXT:
+# Any key with the term "text" is the actual letters that will appear on the site.
+# You may add more paragraph keys.
+#
+# BUTTONS:
+# A button has a link that is a url which the button leads to.
+#
+# For example, a button that leads to Facebook should have the "button-link" key set to https://www.facebook.com
+#
+# If the button links to another page in the site, put a short description of the page and website admin will manually link it
+#
+# Each section can have at most 2 buttons.
+#
+# To delete a button, erase its value
+######################################
+
+
+
+
+
+##################################
+# Social Links
+# - These links should direct to their respective pages
+##################################
+social:
+  - facebook: facebook url
+  - linkedin: linkedin url
+  - twitter: twitter url
+##################################
+# Landing Screen
+# - The landing page text and button contents
+##################################
+landing-text-1: Want to make the most of your summer?
+landing-text-2: Get out and splash!
+landing-text-3: Berea Kentucky First Splash and Dash
+landing-button-text: Click Me!
+landing-button-link: facebook.com
+##################################
+# About Section
+# - add more paragraphs as needed
+# - Do NOT give a value to "about-text" only the paragraphs
+##################################
+about-text:
+  - paragraph: The Daniel Boone Splash and Dash is an exciting swim-run event for kids 7-15 years old. The race will start with the swim portion in the City of Berea Pool and then take participants around the City of Berea multi-use trails. The entire course is closed for safety of all participants.
+  - paragraph:  For a list of Frequently Asked Questions
+about-button-text: Click me!
+about-button-link: facebook.com
+
+about-button2-text: No, click me!
+about-button2-link: facebook.com
+
+##################################
+# Register Section
+# - add more paragraphs as needed
+##################################
+register-text:
+  - paragraph:   Currently we are finalizing our contract with the online registration company Active.com
+  - paragraph:
+register-button-text: Click me!
+register-button-link: facebook.com
+
+register-button2-text: No, click me!
+register-button2-link: facebook.com
+##################################
+# Scholarships Section
+# - add more paragraphs as needed
+##################################
+scholarship-text:
+  - paragraph:   There will be 20 youth scholarships available to youth for this Splash and Dash event. If you are interested in applying for one of these scholarships fill out the scholarship form and tell us why you think you should earn one. A panel of reviewers will get back to you within 24 hours to notify the winners.
+  - paragraph:
+scholarship-button-text: Click me!
+scholarship-button-link: facebook.com
+
+scholarship-button2-text: No, click me!
+scholarship-button2-link: facebook.com
+##################################
+# Sponsor Section
+# - add more paragraphs as needed
+##################################
+sponsor-text:
+  - paragraph:  Currently EPG students are conducting an outreach program to Madison County businesses soliciting Signature, Lead and Supporitn Spnsors. As sponsorship are secured, sponsor names and company descriptions will be inserted here.
+  - paragraph:
+sponsor-button-text: Click me!
+sponsor-button-link: facebook.com
+
+sponsor-button2-text: No, click me!
+sponsor-button2-link: facebook.com
+##################################
+# Rules Section
+# - add more paragraphs as needed
+##################################
+rules-text:
+  - paragraph:   There are USAT Rules which we follow.
+  - paragraph:   Click here to read the USAT Rules
+rules-button-text: Click me!
+rules-button-link: facebook.com
+
+rules-button2-text: No, click me!
+rules-button2-link: facebook.com
+##################################
+# FAQ Section
+# - add more paragraphs as needed
+##################################
+faq-text:
+  - paragraph:  We have 15 Frequently Asked Questions that may answer whatever you're wondering.
+  - paragraph:
+faq-button-text: Click me!
+faq-button-link: facebook.com
+
+faq-button2-text: No, click me!
+faq-button2-link: facebook.com
+##################################
+# Volunteer Section
+# - add more paragraphs as needed
+##################################
+volunteer-text:
+  - paragraph:   
+  - paragraph:
+volunteer-button-text: Click me!
+volunteer-button-link: facebook.com
+
+volunteer-button2-text: No, click me!
+volunteer-button2-link: facebook.com
+##################################
+# Results Section
+# - add more paragraphs as needed
+##################################
+results-text:
+  - paragraph:  This is the first USAT Splash and Dash. Thus there are no 2015 results.
+  - paragraph:  Check Here for 2016 Results
+results-button-text: Click me!
+results-button-link: facebook.com
+
+results-button2-text: No, click me!
+results-button2-link: facebook.com
